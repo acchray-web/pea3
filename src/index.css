@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sarabun", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Space Grotesk", "Sarabun", sans-serif;
+}
+
+/* Custom glow markers for leaflet map nodes */
+@keyframes beaconAlert {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 0 12px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.9;
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.marker-beacon-critical {
+  animation: beaconAlert 1.2s infinite ease-in-out;
+}
+
+@keyframes beaconNormal {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+.marker-beacon-normal {
+  animation: beaconNormal 2s infinite ease-in-out;
+}

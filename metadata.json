@@ -1,0 +1,6 @@
+{
+  "name": "LifeLine ElectriGuard - ระบบเฝ้าระวังผู้ป่วยติดเตียงกรณีไฟฟ้าดับ",
+  "description": "ระบบระบุตำแหน่ง เฝ้าระวัง และวางแผนกู้ภัยผู้ป่วยที่ต้องพึ่งพาอุปกรณ์ทางการแพทย์ใช้ไฟฟ้าสูงสุดในช่วงเวลาการซ่อมบำรุงหรือเกิดไฟฟ้าดับ การไฟฟ้าส่วนภูมิภาคจังหวัดระยอง",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
